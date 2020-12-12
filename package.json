@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Limtrin/MPLP-backend.git"
   },
-  "author": "Limtrin",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Limtrin/MPLP-backend/issues"
   },
-  "homepage": "https://github.com/Limtrin/MPLP-backend#readme"
+  "homepage": "https://github.com/Limtrin/MPLP-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
