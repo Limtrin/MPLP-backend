@@ -59,6 +59,10 @@ func getNextID() int {
 }
 
 func productsHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Add("Access-Control-Allow-Origin", "*")
+	w.Header().Add("Access-Control-Allow-Methods", "POST, GET")
+	w.Header().Add("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Authorization, X-CSRF-Token, Accept-Encoding")
+
 	results, err := database.DbConn.Query(`SELECT price,
 	name,
 	id,
